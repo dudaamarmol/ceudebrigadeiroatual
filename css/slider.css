@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Dócument */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap');
+
+.slide{
+	display: none;
+}
+
+.slide .img{
+	vertical-align: middle;
+	height: 700px;
+	background-size: 1600px;
+
+}
+
+.divslider{
+	width: 100%;
+	position: relative;
+	height: 700px;
+
+}
+
+.pre, .pro{
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	padding: 16px;
+	color: #1f0025;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.pro{
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.pre:hover, .pro:hover{
+	background-color: rgba(0, 0, 0, 0.685);
+}
+
+.numeroslides {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 0;
+  }
+
+  .dot {
+	cursor: pointer;
+	position: relative;
+	top: -30px;
+	height: 15px;
+	width: 15px;
+	margin-left: 2px;
+	background-color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+	background-color: #1f0025;
+  }
+
+  .fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+  }
+  @keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+  }
+
+  @media only screen and (max-width: 300px) {
+	.pre, .pro,.pro {font-size: 11px}
+  .dot{
+   height: 10px;
+	width: 10px;
+   } }
+  @media only screen and (max-width: 500px) {
+	.pre, .pro {font-size: 14px}
+  }

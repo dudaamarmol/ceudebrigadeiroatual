@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/faleconosco.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+    <title>Fale Conosco - Céu de Brigadeiro</title>
+
+    <style>
+        .divfooter{
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="fundo"></div>
+
+  <div class="divnavbar">
+    <div class="container">
+    <h1 class="titulo">Céu de Brigadeiro</h1>
+
+    <div class="menu">
+        <a href="estrutura.html" >Início</a>
+        <a href="#divfooter">Sobre</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="carrinho.html">Carrinho</a>
+        <a href="MQTT.html" class="is-active">Fale Conosco</a>
+        <a href="login.html">Entrar</a>
+    </div>
+
+    <button class="tracos" onclick="abrir()">
+        <span  onclick="abrir()"></span>
+        <span  onclick="abrir()"></span>
+        <span  onclick="abrir()"></span>
+    </div>
+</div> 
+
+<ol class="menu2">
+   <div class="lista"><a href="estrutura.html">Início</a></div>  <br>
+   <div class="lista"><a href="#divfooter">Sobre</a></div>  <br>
+   <div class="lista"><a href="produtos.html">Produtos</a></div> <br>
+   <div class="lista"><a href="carrinho.html">Carrinho</a></div> <br>
+   <div class="lista"><a href="MQTT.html">Fale Conosco</a></div> <br>
+   <div class="lista"><a href="login.html">Fale Conosco</a></div> 
+</ol>
+
+<script>
+var btn = document.querySelector('.tracos');
+var menu = document.querySelector('.menu2');
+
+btn.addEventListener('click', function() {
+
+if(menu.style.display === 'flex'){
+    menu.style.display = 'none';
+} else {
+    menu.style.display = 'flex';
+}
+
+});
+
+</script>
+
+<div class="principalfaq">
+<div class="caixamens">
+<h1 class="titulos5">Digite aqui em que podemos melhorar:</h1>
+
+    <div class="texto"><textarea id="mensagem" required="required"></textarea><span>Digite Aqui</span></div> <br>
+    <button onclick="Enviar();">Enviar</button>
+  </div>
+
+<hr>
+
+  <div class="caixaresp">
+    <h1>Comentários:</h1> 
+   <div id="resposta">  </div>
+
+  </div>
+  </div>
+
+  <div class="divfooter" id="divfooter">
+    <div class="footer" id="footer">
+        <div class="main-content">
+        <div class="left box">
+          <h2>Sobre Nós</h2>
+            <div class="content">
+            <p class="texto">Céu de Brigadeiro, empresa genuinamente brasileira, com 10 anos de mercado, foi a primeira rede de  fast food  do Brasil a incluir drones nas entregas. Sinta-se a vontade para saborear o melhor doce da região, Agradecemos sua visita em nosso site.</p>
+                <div class="social">
+      <a href="" target="_blank"><span class="fab fa-facebook-f"></span></a>
+      <a href="" target="_blank"><span class="fab fa-instagram"></span></a>
+      <a href="" target="_blank"><span class="fab fa-twitter"></span></a>
+                </div>
+            </div>
+          </div>
+          <div class="center box">
+          <h2>&nbsp;Contato</h2>
+              <div class="content">
+                  <div class="place">
+                  <span class="fas fa-map-marker-alt"></span>
+                  <span class="text">Joinville, Santa Catarina</span>
+                  </div>
+                  <div class="phone">
+                  <span class="fas fa-phone-alt"></span>
+                  <span class="text">Em breve</span>
+                  </div>
+                  <div class="email">
+                  <span class="fas fa-envelope"></span>
+                  <span class="text">ceudebrigadeiro@gmail.com</span>
+                  </div>
+              </div>
+          </div>
+          <div class="right box">
+          <h2>Nos Mande uma Mensagem</h2>
+          <div class="content">
+            <form action="https://api.staticforms.xyz/submit" method="post" id="musica">
+                <div class="email">
+                    <div class="text" id="te">Email</div>
+                    <input type="email" required class="enputz" name="email">
+                </div>
+                <div class="msg">
+                    <div class="text" id="te2">Mensagem</div>
+                    <textarea rows="2" cols="25" required class="enputz" name="message"></textarea>
+                </div>
+                <div class="btn">
+                <input type="submit" class="btn btn-info" id="enviar">
+                </div>
+                <input type="hidden" name="redirectTo" value="obrigado.html">
+                <input type="hidden" name="accessKey" value="40630892-3374-416c-bd3e-a6b368d51678">
+            </form>
+        </div>
+          </div>
+      </div>
+    </div>
+</div>
+</div>
+
+    <script src="js/faleconosco.js"></script>
+</body>
+
+</html>

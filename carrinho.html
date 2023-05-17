@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="css/carrinho.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="divnavbar">
+      <div class="container">
+      <h1 class="titulo">Céu de Brigadeiro</h1>
+  
+      <div class="menu">
+        <a href="estrutura.html" >Início</a>
+        <a href="#divfooter">Sobre</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="carrinho.html" class="is-active">Carrinho</a>
+        <a href="MQTT.html">Fale Conosco</a>
+        <a href="login.html">Entrar</a>
+    </div>
+
+    <button class="tracos" onclick="abrir()">
+        <span  onclick="abrir()"></span>
+        <span  onclick="abrir()"></span>
+        <span  onclick="abrir()"></span>
+    </div>
+</div> 
+
+<ol class="menu2">
+   <div class="lista"><a href="estrutura.html">Início</a></div>  <br>
+   <div class="lista"><a href="#divfooter">Sobre</a></div>  <br>
+   <div class="lista"><a href="produtos.html">Produtos</a></div> <br>
+   <div class="lista"><a href="carrinho.html">Carrinho</a></div> <br>
+   <div class="lista"><a href="MQTT.html">Fale Conosco</a></div> <br>
+   <div class="lista"><a href="login.html">Fale Conosco</a></div> 
+</ol>
+  
+  <script>
+     var btn = document.querySelector('.tracos');
+     var menu = document.querySelector('.menu2');
+
+     btn.addEventListener('click', function() {
+
+      if(menu.style.display === 'flex'){
+          menu.style.display = 'none';
+      } else {
+          menu.style.display = 'flex';
+      }
+
+     });
+
+  </script>
+
+
+    <main>
+      <div class="page-title">Seu Carrinho</div>
+      <div class="content">
+        <section>
+          <table>
+            <thead>
+              <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Total</th>
+                <th>-</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="product">
+                    <img src="img/copo_felicidade.jpg" alt="">
+                    <div class="info">
+                      <div class="name">Copo da Felicidade - 500ml</div>
+                      <div class="category">Morango/Chocolate</div>
+                    </div>
+                  </div>
+                </td>
+                <td >R$ <span id="precoprod">15.95</span></td>
+                <td>
+                  <div class="qty" >
+                    <button onclick="diminuir();"><i class="bx bx-minus"></i></button>
+                    <span id="qtde">2</span>
+                    <button onclick="somar();"><i class="bx bx-plus"></i></button>
+                  </div>
+                </td>
+                <td width="80px">R$<span id="total">31.90</span></td>
+                <td>
+                  <button class="remove"><i class="bx bx-x"></i></button>
+                </td>
+              </tr>
+              
+              <script>
+
+                function diminuir(){
+                  
+                  if( qtde.innerHTML > "0"){
+                    qtde.innerHTML-=1
+                    t = parseFloat(precoprod.innerHTML)*qtde.innerHTML
+                  t = t.toFixed(2)
+                  total.innerHTML=t
+                  subtotal.innerHTML=t
+                  total2.innerHTML=t}
+                }
+                
+
+                function somar(){
+                  qtde.innerHTML=parseInt(qtde.innerHTML)+1
+                  t = parseFloat(precoprod.innerHTML)*qtde.innerHTML
+                  t = t.toFixed(2)
+                  total.innerHTML=t
+                  subtotal.innerHTML=t
+                  total2.innerHTML=t
+                }
+
+
+              </script>
+            </tbody>
+          </table>
+        </section>
+        <aside>
+          <div class="box">
+            <header>Resumo da compra</header>
+            <div class="info">
+              <div><span>Sub-total</span>R$<span id="subtotal"> 31.90</span></div>
+              <div><span>Frete</span><span>Gratuito</span></div>
+            </div>
+            <footer>
+              <span>Total</span>
+              R$<span id="total2"> 31.90</span>
+            </footer>
+          </div>
+          <button>Finalizar Compra</button>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+.entregas{
+    width: 90%;
+    height: 500px;
+    display: flex;
+    margin-bottom: 4%;
+    flex-direction: row;
+}
+
+.mapa{
+    width: 50%;
+    height: 500px;
+
+}
+
+.entregas h2{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.cadastro{
+    width: 50%;
+    height: 500px
+}
+
+fieldset{
+    border: 2px solid #1f0025;
+    border-radius: 10px;
+
+}
+
+legend{
+    
+    color: #1f0025;
+    font-weight: 600;
+}
+
+fieldset input{
+    padding: 0.6rem;
+    width: 40%;
+    height: 100%;
+    border: 2px solid #1f0025;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: all .3s;
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+    margin: 2%}
+
+    fieldset select{
+        padding: 0.6rem;
+        width: 43.3%;
+        height: 100%;
+        border: 2px solid #1f0025;
+        border-radius: 5px;
+        font-size: 16px;
+        outline: none;
+        transition: all .3s;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        margin: 2%}
+
+    .botaoen{
+        background: #D51C52;
+        padding: 0.4rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        border-radius: 15px;
+        outline: none;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        margin: 2%;
+        width: 20%;
+        transition: 0.2s all;
+    }
+
+    .botoesen{
+        width: 95%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .botaoen:hover{
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+    }
+
+fieldset input:focus,
+fieldset select:focus{
+    border: 2px solid #D51C52;
+    box-shadow: 2px 2px 1px #D51C52;
+}

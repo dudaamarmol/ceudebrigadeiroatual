@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.links{
+    margin-top: 100px
+}
+
+.links a{
+    text-decoration: none;
+    color: rgb(70, 6, 53)
+}
+
+.links a:hover{
+    text-decoration: underline;
+    
+}
+
+.links ul{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-weight: 500;
+}
+
+.links ol{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-weight: 500;
+}
+
+figure img{
+    width: 500px;
+    border-radius: 15px;
+}
+
+main{
+    width: 100%
+}
+
+section.container{
+    width: 100%;
+    margin: 0
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+article{
+    width: 100%
+}
+
+
+.produtos-compra{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+
+.produtos-conteudo h1{
+    font-size: 33px;
+    margin: 7px;
+}
+
+svg{
+    color: rgb(217, 217, 11);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+strong{
+    font-size: 37px;
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border-radius: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group label{
+    font-size: 14px;
+}
+
+.produtos-conteudo p{
+    font-size: 18px;
+    font-weight: 500;
+    width: 500px;
+    text-align: justify;
+    color: rgb(105, 105, 105)
+}
+
+article button{
+    width: 500px;
+    height: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(5, 151, 5);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    transition: .4s;
+}
+
+article button:hover{
+    background-color: rgb(5, 113, 5);
+}

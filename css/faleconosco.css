@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.principalfaq{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.texto{
+    width: 90%;
+    height: 300px;
+}
+
+.caixamens{
+    width: 50%;
+   
+}
+
+.fundo
+{
+    position: absolute;
+    background-image: url("../img/fundo.jpg");
+    opacity: 1;
+    background-size: 100%;
+    width: 100%;
+    height: 150vh;
+    z-index: -1;
+}
+
+hr{
+    margin: 1%;
+    border-radius: 1px;
+    border: solid 0.4px #1f0025;
+    opacity: 0.5;
+}
+
+.caixaresp{
+    width: 30%;
+    height: 80vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #1f0025;
+    border-radius: 5px;
+    outline: none;
+    color: #1f0025;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.6s;
+    height: 300px;
+    
+}
+
+
+
+.texto span{
+   position: absolute;
+   left: 3%;
+   top: 190px;
+   padding: 10px;
+   pointer-events: none;
+   font-size: 1em;
+   color: #1f0025;
+   text-transform: uppercase;
+   transition: 0.5s;
+   font-weight: 500;
+}
+
+.texto textarea:valid ~ span,
+.texto textarea:focus ~ span{
+    color:#fff;
+    transform: translateX(10px) translateY(-6px);
+    font-size: 0.75em;
+    padding: 0 10px;
+    background-color: #1f0025;}
+
+.texto textarea:valid,
+.texto textarea:focus{
+    border: 1px solid #1f0025;}
+
+
+.caixamens button{
+    background-color: #9201af;;
+    color: black;
+    border: none;
+    padding: 10px;
+    width: 93%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 4%;
+    transition: 0.7s;
+}
+
+.caixamens button:hover{
+    background-color: black;
+    color:#9201af;
+}
+
+.textcor{
+    background-color: #1f0025;
+    color: #fff;
+    width: 80%;
+    border-radius: 10px;
+    margin: 0;
+    padding: 10px;
+    word-break: break-all;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.anonimo{
+    color: #ccc
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #fac031;
+    flex-direction: column;
+}
+
+.text{
+    font-size: 45px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.paragrafo{
+    color: #ffffff;
+    margin-bottom: 50px;
+}

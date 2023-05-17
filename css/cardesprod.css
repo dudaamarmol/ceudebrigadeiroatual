@@ -1,0 +1,60 @@
+.imgcard img{
+    width: 250px;
+    height: 250px;
+    -webkit-transition: -webkit-transform .5s ease;
+    border-radius: 30px;
+    }
+
+    .divanuncio1{
+        width: 90%;
+        height: 300px;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;}
+
+.card{
+    text-align: left;
+    cursor: pointer;
+    width: 250px;
+    height: 250px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 2%;
+    box-shadow: 3px 0px 5px  rgba(70, 4, 4, 0.233);
+    transition: 0.5s;
+    border-radius: 30px;
+}
+
+.textocard{
+    position: absolute;
+    width: 234.7px;
+    height: 100px;
+    padding-left: 1%;
+    font-size: 0.7em;
+    color: #fff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0));
+    border-radius: 30px;
+}
+
+.textocard p{
+    font-size: 1.5em;
+}
+
+.titu{
+    height: 150px;
+    justify-content: end;
+    justify-items: end;
+    align-content: space-between;
+    align-items: flex-end;
+    display: flex;
+    
+}
+
+
+
+.card:hover{
+    box-shadow: 6px 4px 9px  rgba(27, 1, 1, 0.582);
+}

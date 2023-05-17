@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Céu de Brigadeiro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            background-size: cover;
+            height: 100vh;
+            background-image: url('img/chocolate.jpg');
+            font-family: 'Poppins', sans-serif;}
+
+        .fundo{    position: absolute;
+                align-items: center;
+                align-content: center;
+                justify-items: center;
+                justify-content: center;
+                margin-top: -70px;
+                opacity: 0.2;
+                margin-left: 20px;
+                width: 350px}
+
+        .tela{  display: inline-flex;
+                }
+        .titulo{
+            color: whitesmoke;
+            font-size: 60px;
+            font-weight: 800;
+            position: relative;
+            }
+        .tela .titulo2{
+            margin-left: 15px;
+            margin-top: -10px;}
+
+        .titulo2 li{
+            color:#D51C52;
+            list-style: none;
+            font-size: 60px;
+            font-weight: 900;
+            animation: 3s;}    
+        .titulo2 li span::after{
+            content: "";
+            position: absolute;
+            width: 15%;
+            height: 100%;
+            left: 0;
+            border-bottom: 3px solid #D51C52;
+            animation: ceu 3s alternate infinite;
+            margin-top: -10px
+        }
+        .titulo2 li span{   position: relative}
+        .barra{
+            position: absolute;
+            background-color: #fff;
+            height: 5px;
+            width: 320px;
+            align-items: center;
+            align-content: center;
+            justify-items: center;
+            justify-content: center;
+            margin-left: 35px;
+            margin-top: 350px}
+
+        .barra div{ height: 100%;
+                    background-color: #D51C52;
+                    animation: barra 3s;}
+
+     
+
+        @keyframes ceu {50%{ 
+            left: 75%;
+            margin: 0 -35px 0 35px ;
+            margin-top: -10px
+             
+        }}
+
+        @keyframes barra {0%{ width: 0%;} 10%{ width: 10%;} 50%{ width:  50%;} 60%{ width: 60%;} 100%{ width: 100%;}}
+    </style>
+</head>
+<body>
+    <div class="tela">
+        <img src="fundo.png" class="fundo" alt="fundo">
+        <div class="titulo">Céu de
+           
+            <ul class="titulo2">
+                <li><span>Brigadeiro</span></li></ul>
+        </div>
+        <div class="barra">
+            <div></div>
+        </div>
+    </div>
+
+</body>
+<script>
+    var temporizador = setTimeout(abrir, 3000);
+    function abrir(){
+        window.open("estrutura.html", "_self");
+    }
+</script>
+</html>
